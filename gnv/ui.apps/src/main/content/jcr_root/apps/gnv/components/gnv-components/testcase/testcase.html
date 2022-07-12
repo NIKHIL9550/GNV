@@ -1,0 +1,15 @@
+<h4>Test-Case</h4>
+
+<div data-sly-use.author="com.gnv.surge.core.models.Videoimage"></div>
+
+      <div data-sly-test="${author.checkbox}">
+
+      <video width="320" height="240">
+       <source src="${author.video}">
+</div>
+
+
+<div data-sly-test="${!author.checkbox}">
+
+  <img src="${author.video}" alt="Girl as a racer" width="500" height="600">
+</div>
